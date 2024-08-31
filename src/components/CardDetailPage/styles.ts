@@ -52,8 +52,8 @@ export const BattleButton = styled.button`
 export const VS = styled.div`
   width: 80px;
   height: 80px;
-  background-color: #007bff; // Blue background color
-  border-radius: 50%; // Makes it a circle
+  background-color: #007bff;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -28,18 +28,6 @@ const CardDetailPage: React.FC = () => {
     setWinner(null);
   };
 
-  useEffect(() => {
-    const fetchPokemonCard = async () => {
-      try {
-        const result = await api.get(`api/cards/${id}`);
-        setCard(result.data);
-      } catch (error) {
-        console.error("Error fetching cards:", error);
-      }
-    };
-    fetchPokemonCard();
-  }, [id]);
-
   const handleBattle = async () => {
     try {
       const result = await api.post("api/battle", {
@@ -51,6 +39,18 @@ const CardDetailPage: React.FC = () => {
       console.error("Error during battle:", error);
     }
   };
+
+  useEffect(() => {
+    const fetchPokemonCard = async () => {
+      try {
+        const result = await api.get(`api/cards/${id}`);
+        setCard(result.data);
+      } catch (error) {
+        console.error("Error fetching cards:", error);
+      }
+    };
+    fetchPokemonCard();
+  }, [id]);
 
   if (!card || loading) return <div>Loading...</div>;
 
