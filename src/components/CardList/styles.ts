@@ -19,7 +19,6 @@ export const Title = styled.h1`
 `;
 
 export const Container = styled.div`
-  padding: 20px;
   background-color: #f5f5f5;
   min-height: 100vh;
 `;
@@ -28,6 +27,7 @@ export const GridWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
+  padding: 20px;
 `;
 
 export const SearchBar = styled.input`

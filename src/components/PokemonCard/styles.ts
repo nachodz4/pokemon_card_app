@@ -14,10 +14,17 @@ export const ContainerTitle = styled.div`
   align-content: baseline;
 `;
 
-export const Image = styled.div`
+export const DefaultImage = styled.div`
   width: 100px;
   height: 120px;
   background-color: #eee;
+  margin-bottom: 10px;
+`;
+
+export const Image = styled.img`
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
   margin-bottom: 10px;
 `;
 

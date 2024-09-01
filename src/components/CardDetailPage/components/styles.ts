@@ -9,9 +9,16 @@ export const CardInfo = styled.div`
   width: 300px;
 `;
 
-export const Image = styled.div`
+export const DefaultImage = styled.div`
   height: 200px;
   background-color: #eee;
+  margin-bottom: 20px;
+`;
+
+export const Image = styled.img`
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
   margin-bottom: 20px;
 `;
 
